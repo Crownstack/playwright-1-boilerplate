@@ -33,7 +33,7 @@ npx playwright show-report   # View HTML report
 
 ## Environment Setup
 
-- Copy the `.env.example` file and rename it to `myenv.env` inside a folder.
+- Copy the `.env.example` file and rename it to `myenv.env` inside config folder.
 - Open the `myenv.env` file and fill in all required values as described in the comments.
 - Refer to `.env.example` for details about each variable.
 

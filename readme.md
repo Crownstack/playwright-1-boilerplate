@@ -1,6 +1,7 @@
 # Playwright E2E Boilerplate
 
 ## Folder Structure
+
 ```
 /playwright-project
 ├── tests/                # Test specs
@@ -17,8 +18,10 @@
 ├── sample.env            # Sample config for onboarding
 ├── playwright.config.ts  # Playwright configuration
 ```
+
 ## Setup Playwright
-```bash
+
+````bash
 npm init -y  # Initialises package.json file
 npm init playwright@latest # Install playwright with all dependencies
 ## Run Tests
@@ -26,15 +29,24 @@ npm init playwright@latest # Install playwright with all dependencies
 npx playwright test          # Run all tests
 npx playwright test login    # Run specific file
 npx playwright show-report   # View HTML report
-```
+````
+
+## Environment Setup
+
+- Copy the `.env.example` file and rename it to `myenv.env` inside a folder.
+- Open the `myenv.env` file and fill in all required values as described in the comments.
+- Refer to `.env.example` for details about each variable.
 
 ## Switch Environments
+Create a `.env` file
 Edit `.env` and change:
 ```
 ENV_FILE=config/qa.env
 ```
 
 ## Dependencies
+
 - `@playwright/test`
 - `@faker-js/faker`
 - `dotenv`
+
